@@ -1,63 +1,19 @@
 // Main Sass File
+@import 'utilities';
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
 body,
 html {
     height: 100%;
-    background: #fff;
     color: #222;
     font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 18px;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     text-transform: uppercase;
 }
 
-.canvas-wrapper {
+.navbar.on {
+    background: url('https://images.unsplash.com/photo-1495914510314-ba3164b1321f?dpr=1&auto=compress,format&fit=crop&w=1534&h=&q=80&cs=tinysrgb&crop=') no-repeat center center;
+    background-size: cover;
     height: 100vh;
-}
-
-#toggle-sidebar {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-    div {
-        background: #222;
-        padding: 2px;
-        width: 25px;
-        margin-bottom: 4px;
-        border-radius: 5px;
-    }
-}
-
-#sidebar {
-    position: absolute;
-    background: #fff !important;
-    width: 350px;
-    -webkit-box-shadow: 3px 0 3px 3px rgba(0, 0, 0, 0.2);
-    box-shadow: 3px 0 3px 3px rgba(0, 0, 0, 0.2);
-    .wrapper {
-        width: 300px;
-    }
-}
-
-#sidebar.hide {
-    left: -350px;
-    transition: 1.3s;
-}
-
-#sidebar.show {
-    left: 0;
-}
-
-.content {
-    height: 100vh;
-    .img-home {
-        -webkit-box-shadow: 0 0 5px 5px rgba(111, 111, 111, 0.1);
-        box-shadow: 0 0 5px 5px rgba(111, 111, 111, 0.1);
-    }
-}
-
-.mt-10 {
-    margin-top: 5rem !important;
 }
 
 
@@ -136,4 +92,54 @@ html {
 #myDiv {
     display: none;
     text-align: center;
+    background: rgba(34, 34, 34, 0.6);
+    height: 100% !important;
+}
+
+.navbar-toggler {
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background: transparent;
+    border: none;
+    border-radius: 0.25rem;
+    margin: auto;
+}
+
+.nav-link {
+    font-size: 13px !important;
+}
+
+.logo-container {
+    height: 100vh;
+    color: #fff;
+    .image-logo {
+        width: 40vh;
+        margin: auto;
+    }
+    small {
+        position: relative;
+        top: -170px;
+    }
+    p {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 360px) {
+    .logo-container {
+        height: 100vh;
+        color: #fff;
+        .image-logo {
+            width: 40vh;
+            margin: auto;
+        }
+        small {
+            position: relative;
+            top: -145px !important;
+        }
+        p {
+            font-size: 10px;
+        }
+    }
 }

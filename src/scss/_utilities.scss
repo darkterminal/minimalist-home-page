@@ -1,0 +1,23 @@
+@mixin margin($arg) {
+    @if $arg=='m-10' {
+        margin: 5rem !important;
+    }
+    @else if $arg=='m-15' {
+        margin: 7rem !important;
+    }
+    @else if $arg=='mt-10' {
+        margin-top: 5rem !important;
+    }
+    @else if $arg=='mt-15' {
+        margin-top: 7rem !important;
+    }
+    @else if $arg=='mb-10' {
+        margin-top: 5rem !important;
+    }
+    @else if $arg=='mb-15' {
+        margin-top: 7rem !important;
+    }
+    @else {
+        margin: 0rem !important;
+    }
+}

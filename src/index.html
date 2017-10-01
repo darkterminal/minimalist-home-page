@@ -11,61 +11,68 @@
     <title>Arzrose</title>
 </head>
 
-<body onload="myFunction()">
+<body onload="myFunction()" onContextMenu="return false">
 
     <div id="loader"></div>
 
-    <div class="container-fluid h-100 canvas-wrapper animate-bottom" style="display:none;" id="myDiv">
-        <div class="row h-100">
-            <div class="col p-0">
-                <a href class="m-3 navbar-light" id="toggle-sidebar">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                </a>
-                <div class="col-6 col-md-2 col-lg-2 col-xl-2 bg-dark fixed-top pt-5 h-100 hide text-center" id="sidebar">
-                    <div class="mb-5"></div>
-                    <img src="img/logo.png" alt="Logo" class="mb-2 w-50">
+    <div style="display:none;" id="myDiv" class="animate-bottom">
 
-                    <ul class="nav flex-column">
-                        <li class="nav-item"><a class="nav-link text-dark" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link text-dark" href="#">About Me</a></li>
-                        <li class="nav-item"><a class="nav-link text-dark" href="#">Portfolio</a></li>
-                        <li class="nav-item"><a class="nav-link text-dark" href="#">Services</a></li>
-                        <li class="nav-item"><a class="nav-link text-dark" href="#">Contact Me</a></li>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <button class="navbar-toggler text-white text-uppercase" type="button" data-toggle="collapse" data-target="#navbarArzrose" aria-controls="navbarArzrose" aria-expanded="false" aria-label="Toggle navigation" id="button-nav">
+                <small>arzrose</small>
+            </button>
+
+                <div class="collapse navbar-collapse" id="navbarArzrose">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item d-none d-sm-none d-md-block d-lg-block d-xl-block">
+                            <a class="nav-link text-white" href="#">+ Arzrose <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">About Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Muse</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Shop</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Clients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#">Contact Me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#"><i class="fa fa-spotify" aria-hidden="true"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        </li>
                     </ul>
-                    <hr class="bg-light">
-                    <small>
-                        Arzrose Discover Journey!
-                    </small>
-                </div>
-                <div class="p-3 content container text-center">
-                    <div class="mt-10 d-block d-sm-none d-md-none d-lg-none d-xl-none"></div>
-                    <img src="img/logo.png" alt="Logo" class="mb-3">
-                    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <img class="d-block w-100 img-slide" src="img/home-1.png" alt="First slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100 img-slide" src="img/home-2.png" alt="Second slide">
-                            </div>
-                            <div class="carousel-item">
-                                <img class="d-block w-100 img-slide" src="img/home.png" alt="Third slide">
-                            </div>
-                        </div>
-                    </div>
-                    <p class="small mt-2">
-                        ALL RIGHTS RESERVED. &copy; arz rose <br> Powered by ucilredbull
-                    </p>
                 </div>
             </div>
+        </nav>
+
+        <div class="d-flex flex-column align-items-center logo-container" onclick="redirect()">
+            <img src="img/logo-1.png" alt="Logo" class="image-logo">
+            <small>Accuracy. Focus. Professional</small>
+            <p>Copyright Allright Reserved @arzrose <br> Powered By Imam Ali Mustofa</p>
         </div>
+
     </div>
+
 
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 
