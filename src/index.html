@@ -11,7 +11,7 @@
     <title>Arzrose</title>
 </head>
 
-<body onload="myFunction()" onContextMenu="return false">
+<body onload="myFunction()" oncontextmenu="return false">
 
     <div id="loader"></div>
 
@@ -26,34 +26,34 @@
                 <div class="collapse navbar-collapse" id="navbarArzrose">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item d-none d-sm-none d-md-block d-lg-block d-xl-block">
-                            <a class="nav-link text-white" href="#">+ Arzrose <span class="sr-only">(current)</span></a>
+                            <a class="nav-link text-white" href="javascript:void(0);" onclick="route('home');">+ Arzrose <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">About Me</a>
+                            <a class="nav-link text-white" href="javascript:void(0);" onclick="route('about');">About Me</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Muse</a>
+                            <a class="nav-link text-white" href="javascript:void(0);" onclick="route('#');">Muse</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Shop</a>
+                            <a class="nav-link text-white" href="javascript:void(0);" onclick="route('#');">Shop</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Clients</a>
+                            <a class="nav-link text-white" href="javascript:void(0);" onclick="route('#');">Clients</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Contact Me</a>
+                            <a class="nav-link text-white" href="javascript:void(0);" onclick="route('#');">Contact Me</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                            <a class="nav-link text-white" href="javascript:void(0);" onclick="window.open('https://www.instagram.com/arzrose_', '_blank');"><i class="fa fa-instagram" aria-hidden="true"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                            <a class="nav-link text-white" href="javascript:void(0);" onclick="route('#');"><i class="fa fa-facebook" aria-hidden="true"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#"><i class="fa fa-spotify" aria-hidden="true"></i></a>
+                            <a class="nav-link text-white" href="javascript:void(0);" onclick="route('#');"><i class="fa fa-spotify" aria-hidden="true"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                            <a class="nav-link text-white" href="javascript:void(0);" onclick="route('#');"><i class="fa fa-twitter" aria-hidden="true"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -72,7 +72,7 @@
     <script src="js/jquery.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+    <script src="js/jquery.backstretch.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 
